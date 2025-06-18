@@ -2,7 +2,7 @@ body{
     padding: 25px;
   }
   .title {
-      color: #5C6AC4;
+      color: #fff;
   }
   * {
         box-sizing: border-box;
@@ -15,7 +15,7 @@ body{
         height: 100vh;
       }
       header {
-        background: #333;
+        background: #cd50cd;
         color: #fff;
         padding: 1rem;
         text-align: center;
@@ -27,25 +27,25 @@ body{
       }
       .sidebar {
         width: 200px;
-        background: #f4f4f4;
+        background: rgb(210, 134, 189);
         padding: 1rem;
         border-right: 1px solid #ccc;
       }
       .canvas {
         flex: 1;
-        background: #fff;
+        background:  rgb(210, 134, 189);
         position: relative;
         padding: 10px;
         overflow: auto;
       }
       .properties {
         width: 250px;
-        background: #f9f9f9;
+        background: rgb(210, 134, 189);
         padding: 1rem;
         border-left: 1px solid #ccc;
       }
       .draggable {
-        background: #e0e0e0;
+        background:  rgb(210, 134, 189);
         padding: 8px;
         margin-bottom: 10px;
         cursor: grab;
