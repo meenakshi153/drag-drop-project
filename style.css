@@ -1,0 +1,80 @@
+body{
+    padding: 25px;
+  }
+  .title {
+      color: #5C6AC4;
+  }
+  * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+      }
+      .sidebar {
+        width: 200px;
+        background: #f4f4f4;
+        padding: 1rem;
+        border-right: 1px solid #ccc;
+      }
+      .canvas {
+        flex: 1;
+        background: #fff;
+        position: relative;
+        padding: 10px;
+        overflow: auto;
+      }
+      .properties {
+        width: 250px;
+        background: #f9f9f9;
+        padding: 1rem;
+        border-left: 1px solid #ccc;
+      }
+      .draggable {
+        background: #e0e0e0;
+        padding: 8px;
+        margin-bottom: 10px;
+        cursor: grab;
+        text-align: center;
+      }
+      .element {
+        position: relative;
+        margin: 10px;
+        padding: 10px;
+        border: 1px dashed #ccc;
+        cursor: pointer;
+      }
+      form label {
+        display: block;
+        margin-top: 10px;
+      }
+      form input[type="text"],
+      form input[type="number"],
+      form input[type="color"] {
+        width: 100%;
+        padding: 4px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        .sidebar,
+        .properties {
+          width: 100%;
+          border: none;
+        }
+      }
